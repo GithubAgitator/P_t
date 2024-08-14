@@ -31,5 +31,3 @@ class Zakaz_page(Base):
         self.click_zakaz()
         self.get_screenshot()
         time.sleep(10)
-
-

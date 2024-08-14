@@ -70,5 +70,3 @@ class Login_page(Base):
         self.click_products_1()
         self.get_screenshot()
 
-
-

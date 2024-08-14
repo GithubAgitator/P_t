@@ -74,6 +74,3 @@ class Home_info_page(Base):
         self.input_komment('Hello')
         self.click_btn()
         self.get_screenshot()
-
-
-

@@ -61,13 +61,9 @@ class Address_page(Base):
         self.get_current_url()
         self.click_ad()
         self.click_address()
-        time.sleep(5)
         self.click_input_address("1-й Краснокурсантский проезд, 3/5к1")
-        time.sleep(5)
+        time.sleep(2)
         self.click_a_d()
-        time.sleep(5)
         self.click_choose_address()
         self.get_screenshot()
         time.sleep(10)
-
-

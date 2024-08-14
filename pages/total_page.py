@@ -36,4 +36,3 @@ class Total_page(Base):
         self.get_current_url()
         self.click_pl()
         self.assert_word(self.get_name_pizza(), 'Маргарита Гурме 20 см')
-
