@@ -27,11 +27,11 @@ class Telephone_page(Base):
 
     # Actions
     def input_telephone(self, tel):
-        self.get_telephone()
+        self.get_telephone(tel)
         print("Телефон добавлен")
 
     def clic_prod(self):
-        self.get_prog()
+        self.get_prog().click()
         print("Ваш заказ оформлен")
 
     # Methods
@@ -39,6 +39,7 @@ class Telephone_page(Base):
         self.get_current_url()
         self.input_telephone('9051234545')
         self.clic_prod()
+        time.sleep(5)
         self.assert_url('https://dominopizza.ru/auth/login')
 
 
