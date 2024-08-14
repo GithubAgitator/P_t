@@ -27,11 +27,11 @@ class Telephone_page(Base):
 
     # Actions
     def input_telephone(self, tel):
-        self.get_telephone()
+        self.get_telephone().send_keys(tel)
         print("Телефон добавлен")
 
     def clic_prod(self):
-        self.get_prog()
+        self.get_prog().click()
         print("Ваш заказ оформлен")
 
     # Methods
