@@ -27,7 +27,7 @@ class Telephone_page(Base):
 
     # Actions
     def input_telephone(self, tel):
-        self.get_telephone(tel)
+        self.get_telephone().send_keys(tel)
         print("Телефон добавлен")
 
     def clic_prod(self):
